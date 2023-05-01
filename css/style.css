@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --color01: #192a56;
+  --color02: #fff;
+  --color03: #575fcf;
+  --color04: #119759;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  padding-top: 16px;
+  color: var(--color02);
+  background-color: var(--color01);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+header>.container,
+footer>.container {
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+nav {
+  padding: 16px 0;
+  background-color: var(--color03);
+  display: none;
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-right: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav li a {
+  color: var(--color02);
+  text-decoration: none;
+}
+
+.menu-hamburguer {
+  width: 32px;
+  cursor: pointer;
+}
+
+.menu-hamburguer span {
+  height: 2px;
+  width: 100%;
+  background-color: var(--color02);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.container-flex {
+  display: flex;
+}
+
+#sobre-a-loja img {
+  max-width: 400px;
+  margin-right: 24px;
+}
+
+section {
+  padding: 48px 0;
+}
+
+section h2 {
+  margin-bottom: 16px;
+}
+
+.lista-veículos {
+  flex-wrap: wrap;
+}
+
+.lista-veículos li {
+  list-style: none;
+  max-width: 30%;
+  margin-bottom: 24px;
+}
+
+.lista-veículos li img {
+  max-width: 100%;
+}
+
+.lista-veículos li h3 {
+  margin: 16px 0;
+}
+
+.item-central {
+  margin: 0 5%;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 8px 0;
+  border: none;
+  background-color: var(--color04);
+  color: var(--color02);
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.price {
+  display: block;
+  margin: 16px 0;
+}
+
+.price del {
+  color: #ccc;
+  font-size: 14px;
+}
+
+.form-campo {
+  margin-bottom: 16px;
+}
+
+.form-campo label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-campo input,
+.form-campo textarea {
+  width: 100%;
+  display: block;
+  padding: 8px;
+}
+
+.form-campo textarea {
+  resize: none;
+  height: 120px;
+}
+
+form {
+  max-width: 360px;
+}
+
+form button {
+  max-width: 120px;
+}
+
+footer li {
+  list-style: none;
+  margin-left: 16px;
+}
+
+footer li img {
+  height: 36px;
+}
