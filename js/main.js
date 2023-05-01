@@ -30,7 +30,10 @@ $(document).ready(function () {
       }
     },
     messages: { // mensagens para cada input que não preenchido
-      nome: 'Por favo, insira seu nome'
+      nome: 'Por favor, insira seu nome',
+      email: 'Por favor, insira seu email',
+      telefone: 'Por favor, insira seu telefone',
+      mensagem: 'Por favor, insira sua mensagem'
     },
     submitHandler: function (form) { // executando função quando o submit é VALIDO
       console.log(form)
@@ -43,7 +46,7 @@ $(document).ready(function () {
     }
   });
 
-  $('.lista-veículos button').click(function () {
+  $('.lista-veiculos button').click(function () {
     const destino = $('#contato');
 
     const nomeVeiculo = $(this).parent().find('h3').text(); //pegando o texto do elemento 'h3'
